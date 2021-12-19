@@ -3,7 +3,7 @@ const fs = require('fs');
 
 function extractEmails () {
 
-    fs.readFile('names.txt', 'utf8', (err, data)=>{
+    fs.readFile('rawEmailFile.txt', 'utf8', (err, data)=>{
   
    extractEmailAddress =  data.match(/([a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z0-9_-]+)/gi);
 
@@ -13,7 +13,7 @@ function extractEmails () {
    
       const strip = dedupe.sort().toString();
 
-      fs.writeFile('namesFixed.txt', strip, (error) => {
+      fs.writeFile('fixedEmailFile.txt', strip, (error) => {
       
         // In case of a error throw err exception.
         if (error) throw err;

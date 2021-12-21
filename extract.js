@@ -3,7 +3,7 @@ const fs = require('fs');
 
 function extractEmails () {
 
-    fs.readFile('rawEmailFile.txt', 'utf8', (err, data)=>{
+    fs.readFileSync('rawEmailFile.txt', 'utf8', (err, data)=>{
   
    extractEmailAddress =  data.match(/([a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z0-9_-]+)/gi);
 

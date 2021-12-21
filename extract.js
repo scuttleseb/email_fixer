@@ -11,9 +11,9 @@ function extractEmails () {
         return extractEmailAddress.indexOf(data) === index;
       })
    
-      const strip = dedupe.sort().toString();
+      const sorted = dedupe.sort().toString();
 
-      fs.writeFile('fixedEmailFile.txt', strip, (error) => {
+      fs.writeFile('fixedEmailFile.txt', sorted, (error) => {
       
         //Throw and error if an exception arises.
         if (error) throw err;

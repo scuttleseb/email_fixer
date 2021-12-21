@@ -15,7 +15,7 @@ function extractEmails () {
 
       fs.writeFile('fixedEmailFile.txt', strip, (error) => {
       
-        // In case of a error throw err exception.
+        //Throw and error if an exception arises.
         if (error) throw err;
     })
 

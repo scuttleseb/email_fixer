@@ -8,6 +8,7 @@ function extractEmails () {
 
     const dedupe = extractEmailAddress.filter((data,index)=>{
         return extractEmailAddress.indexOf(data) === index;
+        
       })
    
       const sorted = dedupe.sort().toString();

@@ -19,6 +19,7 @@ function extractEmails () {
         if (error) throw err;
     })
 
+    
     console.log(`\n The programme will output a clean list of email addresses extracted from a text document: \n \n ${sorted} \n` );
   
 

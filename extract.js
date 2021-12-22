@@ -8,7 +8,7 @@ function extractEmails () {
 
     const dedupe = extractEmailAddress.filter((data,index)=>{
         return extractEmailAddress.indexOf(data) === index;
-        
+
       })
    
       const sorted = dedupe.sort().toString();
@@ -20,10 +20,8 @@ function extractEmails () {
         if (error) throw err;
     })
 
-
     console.log(`\n The programme will output a clean list of email addresses extracted from a text document: \n \n ${sorted} \n` );
   
-
 });
      
 }

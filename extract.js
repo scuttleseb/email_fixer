@@ -1,4 +1,3 @@
-
 const fs = require('fs');
 
 function extractEmails () {
@@ -15,7 +14,7 @@ function extractEmails () {
 
       fs.writeFile('fixedEmailFile.txt', sorted, (error) => {
 
-        
+
         //Throw and error if an exception arises.
         if (error) throw err;
     })

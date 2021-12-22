@@ -14,12 +14,13 @@ function extractEmails () {
       const sorted = dedupe.sort().toString();
 
       fs.writeFile('fixedEmailFile.txt', sorted, (error) => {
-      
+
+        
         //Throw and error if an exception arises.
         if (error) throw err;
     })
 
-    
+
     console.log(`\n The programme will output a clean list of email addresses extracted from a text document: \n \n ${sorted} \n` );
   
 
